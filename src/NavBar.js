@@ -1,8 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, NavLink } from "react-router-dom";
-import App from "./App"; 
-
+import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
@@ -51,12 +48,4 @@ function NavBar() {
   );
 }
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-    <NavBar />
-  </BrowserRouter>,
-  document.getElementById("root")
-);
-
-
+export default NavBar;
